@@ -14,5 +14,5 @@ COPY . .
 EXPOSE 5000
 
 # Default command uses gunicorn for production
-CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:5000", "app:app"]
+CMD ["bash", "-lc", "gunicorn -w 2 -b 0.0.0.0:${PORT:-5000} app:app"]
 

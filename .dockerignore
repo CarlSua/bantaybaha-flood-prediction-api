@@ -21,9 +21,11 @@ var/
 .idea/
 .vscode/
 *.log
-*.csv
+# Keep training data if you plan to retrain inside the container
+# *.csv
 *.ipynb_checkpoints/
-*.pkl
-*.pickle
-*.joblib
+# Keep model artifacts for serving
+# *.pkl
+# *.pickle
+# *.joblib
 
